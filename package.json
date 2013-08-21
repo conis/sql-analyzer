@@ -1,0 +1,21 @@
+{
+	"name": "sql-analyzer",
+	"description": "用于分析sql语句，目前只支持对sqlite的建表语句进行分析",
+	"version": "0.0.1",
+	"author": "Conis",
+	"engines": { "node": ">= 0.6.0" },
+	"main": "./index",
+	"dependencies": {
+		"underscore":"",
+		"underscore.string": "",
+		"xregexp": "*",
+		"sqlite3": "*"
+	},
+	"devDependencies": {
+		"uglify-js": "",
+		"grunt": "",
+		"coffee-script":"",
+		"mocha" : "*",
+		"expect.js" : "*"
+	}
+}
