@@ -67,7 +67,10 @@ exports.analyseWithSqlite = function(path, tables, callback){
 
 		db.each(sql, function(err, row){
 			if(!err){
-				result.push(exports.analyseWithSql(row.sql));
+				result.push({
+					sql: row.sql,
+					schema: exports.analyseWithSql(row.sql)
+				});
 			}
 		}, function(){
 			callback(null, result);
